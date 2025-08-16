@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="1">
+  <component name="ExportableFileTemplateSettings">
+    <default_templates>
+      <template name="Feature UI.kt" reformat="true" live-template-enabled="false">
+        <template name="Feature UI.kt.child.0.kt" file-name="${NAME}Fragment" reformat="true" live-template-enabled="false" />
+        <template name="Feature UI.kt.child.1.kt" file-name="${NAME}Screen" reformat="true" live-template-enabled="false" />
+        <template name="Feature UI.kt.child.2.kt" file-name="${NAME}UiConverter" reformat="true" live-template-enabled="false" />
+        <template name="Feature UI.kt.child.3.kt" file-name="${NAME}ViewModel" reformat="true" live-template-enabled="false" />
+      </template>
+    </default_templates>
+  </component>
+</project>

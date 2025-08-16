@@ -1,0 +1,80 @@
+[versions]
+activityCompose = "1.10.1" # https://developer.android.com/jetpack/androidx/releases/activity
+andoridxCoreKtx = "1.16.0" # https://developer.android.com/jetpack/androidx/releases/core
+androidDesugarJdkLibs = "2.1.5" # https://github.com/google/desugar_jdk_libs/blob/master/CHANGELOG.md
+androidGradlePlugin = "8.10.0" # https://developer.android.com/studio/releases/gradle-plugin
+androidXFragment = "1.8.9" # https://developer.android.com/jetpack/androidx/releases/fragment
+androidXLifecycleRuntimeKtx = "2.9.0" # https://developer.android.com/jetpack/androidx/releases/lifecycle
+androidXNavigation = "2.9.3" # https://developer.android.com/jetpack/androidx/releases/navigation
+arrow = "2.0.1" # https://github.com/arrow-kt/arrow/releases
+composeBom = "2025.05.01" # https://developer.android.com/develop/ui/compose/bom/bom-mapping
+dagger = "2.56.2" # https://github.com/google/dagger/releases
+kotlin = "2.1.20" # https://github.com/JetBrains/kotlin/releases
+kotlinCoroutines = "1.10.2" # https://github.com/Kotlin/kotlinx.coroutines/releases
+kotlinKsp = "2.1.20-2.0.0" # https://github.com/google/ksp/releases
+kotlinSerialization = "1.8.1" # https://github.com/Kotlin/kotlinx.serialization/releases
+moshi = "1.15.2" # https://github.com/square/moshi/tags
+okhttp = "5.1.0" # https://square.github.io/okhttp/changelogs/changelog/
+retrofit = "3.0.0" # https://github.com/square/retrofit/releases
+testJunitBom = "5.12.2" # https://junit.org/junit5/docs/current/user-guide/#dependency-metadata-junit-bom
+testMockk = "1.14.0" # https://github.com/mockk/mockk/releases
+testTruth = "1.4.4" # https://github.com/google/truth/releases
+testTurbine = "1.2.0" # https://github.com/cashapp/turbine/
+
+[libraries]
+# Used in gradle convention plugin
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+androidx-compose-activity = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "andoridxCoreKtx" }
+androidx-fragment-compose = { group = "androidx.fragment", name = "fragment-compose", version.ref = "androidXFragment" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "androidXLifecycleRuntimeKtx" }
+androidx-navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "androidXNavigation" }
+androidx-navigation-ui = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "androidXNavigation" }
+arrow-core = { group = "io.arrow-kt", name = "arrow-core", version.ref = "arrow" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "dagger" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "dagger" }
+kotlin-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinCoroutines" }
+kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+kotlin-serialization = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinSerialization" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+moshi-adapters = { group = "com.squareup.moshi", name = "moshi-adapters", version.ref = "moshi" }
+moshi-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+okhttp-mockwebserver = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "okhttp" }
+okhttp-tls = { group = "com.squareup.okhttp3", name = "okhttp-tls", version.ref = "okhttp" }
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit" }
+retrofit-scalars = { group = "com.squareup.retrofit2", name = "converter-scalars", version.ref = "retrofit" }
+test-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinCoroutines" }
+test-junit-api = { group = "org.junit.jupiter", name = "junit-jupiter-api" }
+test-junit-engine = { group = "org.junit.jupiter", name = "junit-jupiter-engine" }
+test-junit-params = { group = "org.junit.jupiter", name = "junit-jupiter-params" }
+test-junit-platform-launcher = { group = "org.junit.platform", name = "junit-platform-launcher" }
+test-junit5-bom = { group = "org.junit", name = "junit-bom", version.ref = "testJunitBom" }
+test-mockk = { group = "io.mockk", name = "mockk", version.ref = "testMockk" }
+test-truth = { group = "com.google.truth", name = "truth", version.ref = "testTruth" }
+test-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "testTurbine" }
+
+# Gradle convention plugin
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-serialization-gradlePlugin = { group = "org.jetbrains.kotlin.plugin.serialization", name = "org.jetbrains.kotlin.plugin.serialization.gradle.plugin", version.ref = "kotlin" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+android-library = { id = "com.android.library", version.ref = "androidGradlePlugin" }
+dagger-hilt = { id = "com.google.dagger.hilt.android", version.ref = "dagger" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "kotlinKsp" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
